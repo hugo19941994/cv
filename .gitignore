@@ -37,3 +37,5 @@
 *.xdy
 *.tdo
 *.lol
+
+.DS_Store

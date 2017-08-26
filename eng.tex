@@ -1,6 +1,6 @@
 %-------------------------------------------------------------
 % CV in english
-% Hugo Ferrando Seage - 2016
+% Hugo Ferrando Seage - 2017
 %-------------------------------------------------------------
 
 \documentclass[a4paper, 11pt]{article}
@@ -12,22 +12,22 @@
 \usepackage{enumitem} % Customize enumerate items
 \usepackage{longtable} % Required to make tables span more than one page
 \usepackage{graphicx} % Required for including pictures
+\usepackage{multicol}
 \usepackage[cm]{fullpage}
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 \usepackage[pdfstartview=Fit]{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour, pdfpagemode=UseNone} % Set link colors throughout the document
 \hyphenpenalty=10000
+\setlength{\columnsep}{-3.5cm}
 
 \begin{document}
 \pagestyle{empty} % Removes page numbering
 
 \begin{flushright}
-    4\textsuperscript{th} year student\\
-    Bachelor's Degree in Computer Science\\
+    Computer Science graduate\\
     +34 680 340 463\\
     \href{mailto: me@hugofs.com}{me@hugofs.com}\\
-    \href{mailto: hugoseage@gmail.com}{hugoseage@gmail.com}\\
     \href{https://hugofs.com}{hugofs.com}\\
 \end{flushright}
 
@@ -41,70 +41,88 @@
 
 {\textsc {\Huge \vspace{5mm} \hspace{-13mm} Hugo Ferrando Seage}}\\
 
-\begin{longtable}{rp{11cm}}
+\begin{longtable}{r|p{12cm}}
     EXPERIENCE
-    & {\bf Student Internship at UEM} \hfill Sep 16 --- Mar 17\\
-    & Prediction model of users and their opinion, based on Amazon review texts, using distributed computing\\
+    & \textbf{Telefónica $\sim$ Talentum Startups/Mood} \hfill sep 16 --
     \\
-    & {\bf Telefónica --- Talentum Startups} \hfill Sep 16 --- Mar 17\\
-    & Recommendation engine improvements of Telefonica's video on demand service \href{http://ver.movistarplus.es/}{Movistar+}\\
+    & Several Telefónica I+D \& LUCA projects
     \\
-    & {\bf Student Internship at UEM} \hfill Aug 16 --- Sep 16\\
-    & Motion detection of people swimming in pools and beaches using OpenCV\\
+    & Recommendation engine improvements of Telefonica's video on demand service \href{http://ver.movistarplus.es/}{Movistar+}
+    \\\\
+    & \textbf{Product Hackers $\sim$ Web developer} \hfill jun 16 -- oct 16
     \\
-    & {\bf Web developer at Product Hackers} \hfill Jun 16 --- Oct 16\\
-    & Creating web apps and chat bots using Angular 2 and Ionic 2 for mobile devices and the web\\
+    & Creating web apps and chat bots using Angular 2 and Ionic 2 for mobile devices and the web
+    \\\\
+    & \textbf{UEM $\sim$ Student internships} \hfill sep 15 -- mar 17
     \\
-    & {\bf Student Internship at UEM} \hfill Sep 15 --- Jan 16\\
-    & Android app to detect, alert and register traffic violations using OpenCV (computer vision and artificial intelligence)\\
+    & \href{https://www.researchgate.net/publication/314142014_Prediction_of_User_Opinion_for_Products_-_A_Bag-of-Words_and_Collaborative_Filtering_based_Approach}{Prediction model of users and their opinion, based on Amazon review texts, using distributed computing}
     \\
+    & Motion detection of people swimming in pools and beaches using OpenCV
+    \\
+    & \href{https://github.com/hugo19941994/infrac-coche}{Android app to detect, alert and register traffic violations using OpenCV}
+    \\\\
     EDUCATION
-    & {\bf Universidad Europea de Madrid} \hfill 2014 --- 2017\\
-    & Bachelor's Degree in Computer Science\\
+    & \textbf{Universidad Europea de Madrid} \hfill 2014 -- 2017
     \\
-    & {\bf Universidad Politécnica de Madrid} \hfill 2012 --- 2014\\
-    & Bachelor's Degree in Computer Science\\ 
+    & Bachelor's Degree in Computer Science
     \\
-    TECHNICAL KNOWLEDGE
-    & {\bf Programming Languages}\\
-    & Python, C/C++, Java, Bash, Javascript/NodeJS, Typescript\\
+    & \textit{Thesis:} \href{https://github.com/hugo19941994/movie-pepper-doc/raw/master/thesis.pdf}{Natural language processing based film recommendation engine}
     \\
-    & {\bf Frameworks}\\
-    & Apache Spark, Angular 2, Ionic 2, Spring, NLTK, Bootstrap, jQuery\\
+    & \textit{Activities:} Robotics Club, Data Science Lab
     \\
-    & {\bf Tools}\\
-    & Git, SSH, GPG, \LaTeX, Android SDK \& NDK, Nginx, Jenkins, OpenVPN, DNS (Knot, Unbound, BIND9, DNSSEC, DANE), Btrfs\\
+    & \textit{GPA:} 7.75/10
+    \\\\
+    & \textbf{Universidad Politécnica de Madrid} \hfill 2012 -- 2014
     \\
-    & {\bf Operating Systems}\\
-    & GNU/Linux, Microsoft Windows, Android\\
+    & Bachelor's Degree in Computer Science
     \\
+    & \textit{Activities:} ACM Student Chapter
+    \\\\
+    TECHNICAL
+    & \textbf{Programming languages}
+    \\
+    KNOWLEDGE
+    & Python, C/C++, Java, Javascript (ES6), Bash
+    \\\\
+    & \textbf{Frameworks}
+    \\
+    & Apache Spark, React, Angular 4, NLTK, Gensim, Android SDK \& NDK
+    \\\\
+    & \textbf{Devops \& documentation}
+    \\
+    & GNU/Linux, Git, SSH, GPG, \LaTeX, Markdown, Nginx, Jenkins, OpenVPN, Knot, Postfix, Dovecot
+    \\\pagebreak
     PROJECTS
-    & \vspace{-8mm}
-    \begin{itemize}[leftmargin=0cm,label={}]
-        \item \href{https://github.com/hugo19941994/CHIP8-Emu}{CHIP-8 interpreter}: Executes CHIP-8 programs in Windows and Linux
-        \item \href{https://github.com/hugo19941994/SpaceInvaders-Emu}{Intel 8080 emulator}: Executes Space Invaders in Windows
-        \item {ovpn.io}: VPN provider using OpenVPN (offline)
-        \item \href{https://github.com/hugo19941994/ViajeFacil}{ViajeFácil}: Management software for flight agencies. Colaboration between UEM \& Unisys
-        \item \href{https://github.com/hugo19941994/CV-Parser}{CV-Parser}: CV management system using Name Entity Recognition and bayesian networks. Collaboration between UEM \& Everis
-        \item \href{https://github.com/hugo19941994/robot}{Human Rescue Bot}: Laureate Awards for Excellence in Robotics Engineering 2016 1\textsuperscript{st} place winner
-    \end{itemize}\\
+    & \href{https://github.com/hugo19941994/CHIP8-Emu}{CHIP-8 interpreter}: Executes CHIP-8 programs in Windows and Linux
     \\
+    & \href{https://github.com/hugo19941994/SpaceInvaders-Emu}{Intel 8080 emulator}: Executes Space Invaders in Windows
+    \\
+    & \href{https://vpn.hugofs.com}{ovpn}: VPN provider using OpenVPN (offline)
+    \\
+    & \href{https://github.com/hugo19941994/ViajeFacil}{ViajeFácil}: Management software for flight agencies. Colaboration between UEM \& Unisys
+    \\
+    & \href{https://github.com/hugo19941994/CV-Parser}{CV-Parser}: CV management system using Name Entity Recognition and bayesian networks. Collaboration between UEM \& Everis
+    \\
+    & \href{https://github.com/hugo19941994/robot}{Human Rescue Bot}: Laureate Awards for Excellence in Robotics Engineering 2016 1\textsuperscript{st} place winner
+    \\\\
     CERTIFICATIONS
-    & \vspace{-8mm}
-    \begin{itemize}[leftmargin=0cm,label={},noitemsep]
-        \item Certificate in Advanced English (CAE)
-        \item CCNA 1: Introduction to Networks
-        \item CCNA 2: Routing and Switching Essentials
-        \item CCNA 4: Connecting Networks
-    \end{itemize}\\
+    & Certificate in Advanced English (CAE)
     \\
+    & CCNA 1: Introduction to Networks
+    \\
+    & CCNA 2: Routing and Switching Essentials
+    \\
+    & CCNA 4: Connecting Networks
+    \\\\
     LANGUAGES
-    & \vspace{-8mm}
-    \begin{itemize}[leftmargin=0cm,label={},noitemsep]
-        \item Advanced english
-        \item Native spanish
-        \item Native italian
-        \item Basic french
-    \end{itemize}
+    & \vspace{-1.85\baselineskip} % TODO: Find a better wayy
+    \begin{multicols}{2}
+        \begin{itemize}[leftmargin=0cm, label={}, noitemsep]
+            \item Advanced english
+            \item Native spanish
+            \item Native italian
+            \item Basic french
+        \end{itemize}
+    \end{multicols}
 \end{longtable}
 \end{document}
