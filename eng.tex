@@ -3,11 +3,12 @@
 % Hugo Ferrando Seage - 2017
 %-------------------------------------------------------------
 
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{subfig}
+\usepackage{paracol}
 \usepackage{booktabs}
 \usepackage{enumitem} % Customize enumerate items
 \usepackage{longtable} % Required to make tables span more than one page
@@ -21,6 +22,10 @@
 \hyphenpenalty=10000
 \setlength{\columnsep}{-3.5cm}
 
+\newenvironment{myparacol}[2][]{%
+\begin{paracol}{#2}[#1]\setlength{\parindent}{0pt}}{%
+\end{paracol}}
+
 \begin{document}
 \pagestyle{empty} % Removes page numbering
 
@@ -31,7 +36,7 @@
     \href{https://hugofs.com}{hugofs.com}\\
 \end{flushright}
 
-\vspace{-40mm}
+\vspace{-27mm}
 
 \begin{figure}[ht!]
     \begin{flushleft}
@@ -41,92 +46,115 @@
 
 {\textsc {\Huge \vspace{5mm} \hspace{-13mm} Hugo Ferrando Seage}}\\
 
-\begin{longtable}{r|p{12cm}}
-    EXPERIENCE
-    & \textbf{Telefónica $\sim$ Talentum Startups/Mood} \hfill sep 16 --
-    \\
-    & Several Telefónica I+D \& LUCA projects
-    \\
-    & Recommendation engine improvements of Telefonica's video on demand service Movistar+
-    \\\\
-    & \textbf{Product Hackers $\sim$ Web developer} \hfill jun 16 -- oct 16
-    \\
-    & Creating web apps and chat bots using Angular 2 and Ionic 2 for mobile devices and the web
-    \\\\
-    & \textbf{UEM $\sim$ Student internships} \hfill sep 15 -- mar 17
-    \\
-    & \href{https://www.researchgate.net/publication/314142014_Prediction_of_User_Opinion_for_Products_-_A_Bag-of-Words_and_Collaborative_Filtering_based_Approach}{Prediction model of users and their opinion, based on Amazon review texts, using distributed computing}
-    \\
-    & Motion detection of people swimming in pools and beaches using OpenCV
-    \\
-    & \href{https://github.com/hugo19941994/infrac-coche}{Android app to detect, alert and register traffic violations using OpenCV}
-    \\\\
+\setlength{\columnsep}{24pt}
+\begin{myparacol}{2}
     EDUCATION
-    & \textbf{Universidad Politécnica de Madrid} \hfill 2012 -- 2014
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+    \textbf{U-tad} \hfill 17 -- 18
+
+    Master in graphics programming and simulation\\
+
+    \textbf{Universidad Europea de Madrid} \hfill 14 -- 17
+
+    Bachelor's Degree in Computer Science
+
+    \textit{Thesis:} \href{https://github.com/hugo19941994/movie-pepper-doc/raw/master/thesis.pdf}{Natural language processing based film recommendation engine}
+
+    \textit{Activities:} Robotics Club, Data Science Lab
+
+    \textit{GPA:} 7.8/10\\
+
+    \textbf{Universidad Politécnica de Madrid} \hfill 12 -- 14
+
+    Bachelor's Degree in Computer Science
+
+    \textit{Activities:} ACM Student Chapter
     \\
-    & Bachelor's Degree in Computer Science
-    \\\\
-    & \textbf{Universidad Europea de Madrid} \hfill 2014 -- 2017
+
+    \switchcolumn
+
+    EXPERIENCE
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+
+    \textbf{Telefónica I+D} \hfill dec 17 --
+
+    Software Engineer for SmartDigits\\
+
+    \textbf{Telefónica $\sim$ Talentum} \hfill sep 16 -- nov 17
+
+    Several Telefónica I+D \& LUCA projects
+
+    Recommendation engine improvements of Telefonica's video on demand service Movistar+\\
+
+    \textbf{Product Hackers} \hfill jun 16 -- oct 16
+
+    Development of web apps and chat bots using Angular 2 and Ionic 2 for mobile devices and the web\\
+
+    \textbf{UEM} \hfill sep 15 -- mar 17
+
+    \href{https://www.researchgate.net/publication/314142014_Prediction_of_User_Opinion_for_Products_-_A_Bag-of-Words_and_Collaborative_Filtering_based_Approach}{Prediction model of users and their opinion, based on Amazon review texts, using distributed computing}
+
+    Motion detection of people swimming in pools and beaches using OpenCV
+
+    \href{https://github.com/hugo19941994/infrac-coche}{Android app to detect, alert and register traffic violations using OpenCV}
     \\
-    & Bachelor's Degree in Computer Science
-    \\
-    & \textit{Thesis:} \href{https://github.com/hugo19941994/movie-pepper-doc/raw/master/thesis.pdf}{Natural language processing based film recommendation engine}
-    \\
-    & \textit{Activities:} Robotics Club, Data Science Lab
-    \\
-    & \textit{GPA:} 7.75/10
-    \\\\
-    & \textbf{Universidad Politécnica de Madrid} \hfill 2012 -- 2014
-    \\
-    & Bachelor's Degree in Computer Science
-    \\
-    & \textit{Activities:} ACM Student Chapter
-    \\\\
-    TECHNICAL
-    & \textbf{Programming languages}
-    \\
-    KNOWLEDGE
-    & Python, C/C++, Java, Javascript (ES6), Bash, Go
-    \\\\
-    & \textbf{Frameworks}
-    \\
-    & Apache Spark, React, Angular, NLTK, Gensim, Flask, Android SDK \& NDK
-    \\\\
-    & \textbf{Devops \& documentation}
-    \\
-    & GNU/Linux, Git, SSH, GPG, \LaTeX, Markdown, Nginx, Jenkins, OpenVPN, Knot, Postfix, Dovecot
-    \\\\
-    PROJECTS
-    & \href{https://github.com/hugo19941994/SpaceInvaders-Emu}{Intel 8080 emulator}: Space Invaders emulator for MacOS written in C++ and OpenGL
-    \\
-    & \href{https://github.com/hugo19941994/CHIP8-Emu}{CHIP-8 interpreter}: CHIP-8 emulator for Windows and Linux
-    \\
-    & \href{https://vpn.hugofs.com}{ovpn}: OpenVPN based VPN provider
-    \\
-    & \href{https://github.com/hugo19941994/ViajeFacil}{ViajeFácil}: Management software for flight agencies. Colaboration between UEM \& Unisys
-    \\
-    & \href{https://github.com/hugo19941994/CV-Parser}{CV-Parser}: CV management system using Name Entity Recognition and bayesian networks. Collaboration between UEM \& Everis
-    \\
-    & \href{https://github.com/hugo19941994/robot}{Human Rescue Bot}: Laureate Awards for Excellence in Robotics Engineering 2016 1\textsuperscript{st} place winner
-    \\\\
-    CERTIFICATIONS
-    & Certificate in Advanced English (CAE)
-    \\
-    & CCNA 1: Introduction to Networks
-    \\
-    & CCNA 2: Routing and Switching Essentials
-    \\
-    & CCNA 4: Connecting Networks
-    \\\\
+
+    \switchcolumn
+
+    TECHNICAL KNOWLEDGE
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+
+    Python, C++, Go, Javascript ES7, Bash\\
+
+    Apache Spark, React, Angular, Flask, OpenGL, Android SDK \& NDK\\
+
+    GNU/Linux, Git, SSH, GPG, \LaTeX, Markdown, Nginx, Jenkins\\
+
     LANGUAGES
-    & \vspace{-1.85\baselineskip} % TODO: Find a better wayy
-    \begin{multicols}{2}
-        \begin{itemize}[leftmargin=0cm, label={}, noitemsep]
-            \item Advanced english
-            \item Native spanish
-            \item Native italian
-            \item Basic french
-        \end{itemize}
-    \end{multicols}
-\end{longtable}
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+    \noindent\begin{tabular}{ @{} l r }
+        Advanced english & Native spanish\\
+        Native italian & Basic french\\
+    \end{tabular}
+    \\
+
+    CERTIFICATIONS
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+    Certificate in Advanced English (CAE)
+
+    CCNA 1: Introduction to Networks
+
+    CCNA 2: Routing and Switching Essentials
+
+    CCNA 4: Connecting Networks
+
+    \switchcolumn
+
+    \noindent PROJECTS
+    \vspace{1mm}
+    \hrule
+    \kern9pt
+    \href{https://github.com/hugo19941994/SpaceInvaders-Emu}{Intel 8080 emulator}: Space Invaders emulator for MacOS written in C++ and OpenGL
+
+    \href{https://github.com/hugo19941994/CHIP8-Emu}{CHIP-8 interpreter}: CHIP-8 emulator for Windows and Linux
+
+    \href{https://vpn.hugofs.com}{ovpn}: OpenVPN based VPN provider
+
+    \href{https://github.com/hugo19941994/ViajeFacil}{ViajeFácil}: Management software for flight agencies. Colaboration between UEM \& Unisys
+
+    \href{https://github.com/hugo19941994/CV-Parser}{CV-Parser}: CV management system using Name Entity Recognition and bayesian networks. Collaboration between UEM \& Everis
+
+    \href{https://github.com/hugo19941994/robot}{Human Rescue Bot}: Laureate Awards for Excellence in Robotics Engineering 2016 1\textsuperscript{st} place winner
+
+\end{myparacol}
 \end{document}
