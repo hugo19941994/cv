@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{subfig}
+\usepackage{tabularx}
 \usepackage{paracol}
 \usepackage{booktabs}
 \usepackage{enumitem} % Customize enumerate items
@@ -121,10 +122,9 @@
     \vspace{1mm}
     \hrule
     \kern9pt
-    \noindent\begin{tabular}{ @{} l r }
-        Advanced english & Native spanish\\
-        Native italian & Basic french\\
-    \end{tabular}
+    \noindent\begin{tabularx}{\columnwidth}{ @{} X X X }
+        English & Spanish & Italian
+    \end{tabularx}
     \\
 
     CERTIFICATIONS
