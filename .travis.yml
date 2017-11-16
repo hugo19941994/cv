@@ -1,6 +1,8 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended latexmk latex-xcolor texlive-latex-extra texlive-lang-spanish
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended latexmk latex-xcolor texlive-latex-extra texlive-lang-spanish chktex
 script:
 - make all
+- chktex eng.tex
+- chktex esp.tex
