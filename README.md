@@ -8,18 +8,16 @@ Feel free to use it to suit your needs!
 
 ## Compile
 
-Compile both the english and spanish versions
-
 ```bash
+# Compile both the english and spanish versions and clean
 make all
-```
-Compile the english version
 
-```bash
+# Compile the english version
 make eng.pdf
-```
-Compile the spanish versions
 
-```bash
+# Compile the spanish versions
+make esp.pdf
+
+# Clean files
 make esp.pdf
 ```
