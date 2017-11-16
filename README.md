@@ -1,5 +1,7 @@
 # My Résumé
 
+[![Build Status](https://travis-ci.org/hugo19941994/cv.svg?branch=master)](https://travis-ci.org/hugo19941994/cv)
+
 Simple résumé written in LaTeX.
 
 Feel free to use it to suit your needs!
