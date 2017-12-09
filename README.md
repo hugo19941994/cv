@@ -19,5 +19,5 @@ make eng.pdf
 make esp.pdf
 
 # Clean files
-make esp.pdf
+make clean
 ```
